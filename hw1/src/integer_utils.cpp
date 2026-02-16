@@ -19,8 +19,6 @@ void integer_utils::runIntegerOption(){
         cout << "Result: " << val << endl;
     }
     // this is a single line comment
-    a++;
-    cout << "After post-increment: " << a << endl;
-    a--;
-    cout << "After pre-increment: " << a << endl;
+    cout << "After post-increment: " << a++ << endl;
+    cout << "After pre-increment: " << ++a << endl;
 }

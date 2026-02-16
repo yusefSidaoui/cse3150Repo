@@ -10,7 +10,8 @@ void string_utils::runStringOption(){
     cin >> slength;
 
     if(slength >= 20){
-        throw std::runtime_error("Cannot exceed 19");
+      cout << "Error: Cannot exceed 20" << endl;
+      std::exit(1);
     }
     std::cin.ignore();
     cout << "Enter string: " << endl;

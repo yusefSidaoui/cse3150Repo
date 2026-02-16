@@ -13,7 +13,7 @@ void do_while_count_utils::runDoWhileCount(){
     int array[5] {1, 2, 3, 4, 5};
 
     for(int i : array){
-        cout << "Value: " << array[i] << endl;
-        if(array[i] == num) break;
+        cout << "Value: " << i << endl;
+        if(i == num) break;
     }
 }
