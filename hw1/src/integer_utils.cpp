@@ -15,7 +15,7 @@ void integer_utils::runIntegerOption(){
         cout << "Error: division by zero" << endl;
         return;
     } else{
-        float val = a / b;
+        double val = (double)a / b;
         cout << "Result: " << val << endl;
     }
     // this is a single line comment
