@@ -6,10 +6,15 @@
 using std::cout, std::endl, std::string;
 void text_mode::run(int argc, char*argv[]){
 
-    string text = argv[2];
-    cout << text << endl;
+    if (argc < 3) {
+        cout << "Usage: ./analyzer text <string>" << endl;
+        return;
+    }
 
-    cout << text.size() << endl;
+    string text = argv[2];
+    cout << "Original: " << text << endl;
+
+    cout << "Length: " << text.size() << endl;
 
     int letters = 0;
     int digits = 0;
@@ -39,8 +44,16 @@ void text_mode::run(int argc, char*argv[]){
     cout << "All lowercase: " << text << endl;
     size_t pos = text.find("test");
     if(pos != string::npos){
-
-        //do later
+        cout << "containstestyes" << endl;
+    }else{
+        cout << "containstestno" << endl;
     }
+
+    if(spaces > 0){
+        size_t pos2 = text.find(" ");
+        cout << "First word: " << text.substr(0, pos2) << endl;
+    }
+
+
 
 }

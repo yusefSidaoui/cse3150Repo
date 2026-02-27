@@ -3,7 +3,6 @@
 #include "text_mode.h"
 #include "add_mode.h"
 #include "stats_mode.h"
-#include <map>
 using std::cout, std::endl;
 
 int main(int argc, char*argv[]){
